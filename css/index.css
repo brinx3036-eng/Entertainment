@@ -223,7 +223,6 @@ header{
 }
 .section-container h1{
     font-size: 90px;
-    /* font-weight: 200; */
 }
 .section-container h5{
     font-size: 20px;
@@ -231,8 +230,9 @@ header{
 }
 .section-container ul{
     display: flex;
-    gap: 50px;
+    gap: 20px;
     padding: 14px;
+    flex-wrap: wrap;
 }
 .section-container svg{
     width: 15px;
