@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&amp;family=Plus+Jakarta+Sans:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-lowest":"#0e0e10","surface-dim":"#131315","on-surface-variant":"#e4beba","surface-tint":"#ffb3ae","primary":"#ffb3ae","outline-variant":"#5b403e","secondary-fixed-dim":"#c8c6c2","on-tertiary-container":"#29292e","secondary-container":"#494946","on-primary":"#68000b","secondary-fixed":"#e4e2dd","surface":"#131315","inverse-primary":"#ba1724","tertiary-container":"#919096","surface-container-high":"#2a2a2c","error":"#ffb4ab","primary-container":"#ff5352","inverse-surface":"#e5e1e4","tertiary":"#c8c5cc","on-secondary":"#30312e","tertiary-fixed-dim":"#c8c5cc","on-tertiary-fixed-variant":"#47464c","on-primary-container":"#5c0008","background":"#131315","on-background":"#e5e1e4","surface-container-low":"#1c1b1d","tertiary-fixed":"#e4e1e8","on-error-container":"#ffdad6","primary-fixed":"#ffdad7","surface-variant":"#353437","surface-container-highest":"#353437","on-tertiary":"#303035","inverse-on-surface":"#313032","on-secondary-fixed":"#1b1c19","on-primary-fixed":"#410004","primary-fixed-dim":"#ffb3ae","on-secondary-container":"#b9b8b4","surface-container":"#201f21","on-primary-fixed-variant":"#930014","on-error":"#690005","secondary":"#c8c6c2","on-secondary-fixed-variant":"#474744","surface-bright":"#39393b","on-tertiary-fixed":"#1b1b20","outline":"#ab8986","error-container":"#93000a"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter-mobile":"1rem","margin":"4rem","space-lg":"1.5rem","space-sm":"0.5rem","gutter":"1.5rem","space-xl":"3rem","space-xs":"0.25rem","space-md":"1rem","margin-mobile":"1.25rem"},fontFamily:{"headline-md":["Playfair Display"],"headline-lg-mobile":["Playfair Display"],"label-md":["Plus Jakarta Sans"],"display-lg-mobile":["Playfair Display"],"title-sm":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-lg":["Playfair Display"],"headline-lg":["Playfair Display"],"title-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"display-xl-mobile":["Playfair Display"],"display-xl":["Playfair Display"]},fontSize:{"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0em","fontWeight":"500"}],"label-md":["13px",{"lineHeight":"18px","letterSpacing":"0.06em","fontWeight":"600"}],"display-lg-mobile":["32px",{"lineHeight":"40px","letterSpacing":"-0.01em","fontWeight":"400"}],"title-sm":["16px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"600"}],"label-sm":["11px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"0em","fontWeight":"400"}],"display-lg":["56px",{"lineHeight":"64px","letterSpacing":"-0.02em","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"500"}],"title-lg":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0.01em","fontWeight":"400"}],"display-xl-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.01em","fontWeight":"400"}],"display-xl":["72px",{"lineHeight":"80px","letterSpacing":"-0.02em","fontWeight":"400"}]}}}}</script></head><body class="bg-background font-body-md text-body-md text-on-background selection:bg-primary-container selection:text-on-primary-container min-h-screen flex flex-col"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/85 backdrop-blur-md shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-20 w-full px-margin flex items-center justify-between"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm focus:outline-none" data-path="home" href="#"><img alt="Obsidian Cinema Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIC29jnbC-z20lkMRVAn7mNLYRu3IvoXP0jS4_sBpTHHF2RANfPAkHwjA1kNndVcURhvSbuUX3Sa8pD0SdIuvVokXtXAqy4Hc6yLDfdocmko4trdKEuIymiUtMnCPMJHvjY4bNDsq0xvSRH9aSEcK5vraseSTglQfsfqkR6VfZ_eaQyMSgR48XmziHW3SrfoX0MHG1vE0wEO_eyQz5Vju_5RqOu2ZXXzl7_GCe7aAuqI5ymZ4swA5-evI"/><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase">Obsidian</span></a></div><nav class="hidden md:flex items-center gap-space-xl" data-active-classes="text-primary font-bold"><a aria-current="page" class="uppercase tracking-wider transition-colors text-primary font-bold" data-path="home" href="#">Home</a><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="movies-and-tv" href="#">Movies &amp; TV</a><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="music" href="#">Music</a><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="news" href="#">News</a><a class="text-on-surface-variant font-label-md text-label-md uppercase tracking-wider hover:text-on-surface transition-colors" data-path="content-detail" href="#">Exhibitions</a></nav><div class="flex items-center gap-space-md"><button class="flex items-center gap-space-xs px-space-md py-space-xs rounded-full bg-surface-container-low text-secondary hover:bg-surface-container-high hover:text-on-surface transition-all focus:outline-none" type="button"><span class="material-symbols-outlined text-title-sm">search</span><span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase hidden lg:inline">Search</span><kbd class="hidden lg:inline-block px-1.5 py-0.5 rounded bg-surface-container-highest text-on-surface-variant font-label-sm text-label-sm">⌘K</kbd></button><button aria-label="Watchlist" class="relative flex items-center justify-center w-10 h-10 rounded-full bg-surface-container-low text-secondary hover:bg-surface-container-high hover:text-on-surface transition-all focus:outline-none" type="button"><span class="material-symbols-outlined text-title-sm">bookmark</span><span class="absolute -top-1 -right-1 flex items-center justify-center w-5 h-5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm font-bold">4</span></button><div class="flex items-center gap-space-xs pl-space-xs cursor-pointer group"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-nSbrrDt1EWskWlf9C4USxMG3KP86226ITrTR1Z5RK8qrvC3PlNWfCzxD6R02ErXoR4O007DSkLz4TyfQa5Urn2QyMAUkpR_z9mOOi7fLohSGe5QagkoWaqgXwxapwEJupFpkotBEfIQnuBM27XYZRrcJZnM1cwJH9cvYETBmlRsCFwkn4Hf2pieigiVOIxOo-0Dz0I4AnJXQXcUq2-2VN48ayl1u6qIcLz6PnT57DLPM6QvpTigP"/><span class="material-symbols-outlined text-on-surface-variant group-hover:text-on-surface transition-colors">expand_more</span></div></div></div></header><main class="w-full pt-20 bg-background flex-1"><div class="flex flex-col w-full">
+<!-- Cinematic Hero Feature Section -->
+<section class="relative w-full -mt-20 overflow-hidden bg-surface-container-lowest select-none">
+<!-- Atmospheric Ambient Vignette & Multi-stop Gradients -->
+<div class="relative w-full min-h-[942px] flex items-end pb-space-xl pt-36">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-1000 scale-105" data-alt="Cinematic still from Chronos Void featuring an atmospheric deep space anomaly near a gargantuan black hole accretion disk with ethereal shimmering cosmic dust, warm amber flare reflections against pitch obsidian black cosmos, cinematic anamorphic 65mm film grain, 8k resolution, intense dramatic lighting" id="hero-backdrop" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuANAQbebUN34J00rAuQx0dmIjjg0LpTlDJ0NJEWe-V88SyNUibkXazpZJh_altiqZ5Q3xdVfRNxK252ua8PpcVwPT2TCQYfgOFgdpXDy-JCH1SVQA1GM7VOi89cIRL-zmNd5xcFcm3ez8Nod3FEJqnLUY7DJw1bOnR1yhYjvXJ52HX8P0Y9xw41Kglnd6tmX9bqvTHrNaXzoY80uAiuZl3PmapPZZ73LfmpdlGEaZJia_w8I5I5SIre')"></div>
+<!-- Scrim Overlays (Tone stepping & read scrims) -->
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-background via-background/70 to-transparent w-full md:w-3/4"></div>
+<div class="absolute top-0 inset-x-0 h-40 bg-gradient-to-b from-surface-container-lowest/80 to-transparent"></div>
+<!-- Hero Content Container -->
+<div class="relative z-10 w-full px-margin-mobile md:px-margin max-w-7xl">
+<div class="flex flex-col gap-space-md max-w-3xl">
+<!-- Overline Tagline -->
+<div class="flex items-center gap-space-sm">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-0.5 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm tracking-widest uppercase shadow-md">
+<span class="w-1.5 h-1.5 rounded-full bg-on-primary-container animate-pulse"></span>
+              Live Premiere
+            </span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Chronos: Void</span>
+</div>
+<!-- Hero Editorial Headline -->
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-on-surface tracking-tight leading-[1.05]">
+            The entertainment everyone is talking about.
+          </h1>
+<!-- Logline -->
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl text-shadow">
+            In deep orbit near Sagittarius A*, an expedition discovers that time does not move forward—it vibrates through the structural marrow of the cosmos.
+          </p>
+<!-- Rich Metadata Badges Line -->
+<div class="flex flex-wrap items-center gap-x-space-md gap-y-space-xs pt-space-xs font-label-md text-label-md text-on-surface-variant">
+<span class="font-semibold text-on-surface">2026</span>
+<span class="text-outline-variant font-black">·</span>
+<span>Dir. Céline Song</span>
+<span class="text-outline-variant font-black">·</span>
+<span>Sci-Fi / Psychodrama</span>
+<span class="text-outline-variant font-black">·</span>
+<span>2h 14m</span>
+<span class="text-outline-variant font-black">·</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">4K HDR</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-on-surface font-label-sm text-label-sm font-bold">Dolby Atmos</span>
+<span class="text-outline-variant font-black">·</span>
+<span class="flex items-center gap-1 text-primary font-bold">
+<span class="material-symbols-outlined text-[16px]">verified</span>
+              98% Critics
+            </span>
+</div>
+<!-- Interactive Action Controls -->
+<div class="flex flex-wrap items-center gap-space-md pt-space-md">
+<a class="inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md tracking-wider uppercase hover:bg-primary transition-all duration-300 shadow-xl hover:shadow-[0_0_24px_rgba(255,83,82,0.35)] transform active:scale-95" data-path="content-detail" href="#">
+<span class="material-symbols-outlined text-title-sm" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+              Watch Now
+            </a>
+<button class="bookmark-btn inline-flex items-center gap-space-sm px-space-lg py-space-sm rounded-full bg-surface-container-high/60 backdrop-blur-md text-on-surface font-label-md text-label-md tracking-wider uppercase hover:bg-surface-container-highest transition-all duration-300 shadow-md active:scale-95" onclick="toggleBookmark(this)" type="button">
+<span class="material-symbols-outlined text-title-sm icon-state">add</span>
+<span class="label-state">Add to Watchlist</span>
+</button>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-full bg-surface-container-low text-secondary font-label-md text-label-md tracking-wider uppercase hover:text-on-surface hover:bg-surface-container transition-colors" data-path="music" href="#">
+<span class="material-symbols-outlined text-title-sm">graphic_eq</span>
+<span>Soundscapes</span>
+</a>
+</div>
+</div>
+<!-- Hero Carousel Dots & Visual Counter -->
+<div class="flex items-center justify-between pt-space-xl">
+<div class="flex items-center gap-space-xs" id="hero-indicators">
+<button aria-label="Slide 1" class="w-8 h-1 rounded-full bg-primary transition-all"></button>
+<button aria-label="Slide 2" class="w-2 h-1 rounded-full bg-surface-variant hover:bg-on-surface-variant transition-all"></button>
+<button aria-label="Slide 3" class="w-2 h-1 rounded-full bg-surface-variant hover:bg-on-surface-variant transition-all"></button>
+<button aria-label="Slide 4" class="w-2 h-1 rounded-full bg-surface-variant hover:bg-on-surface-variant transition-all"></button>
+<button aria-label="Slide 5" class="w-2 h-1 rounded-full bg-surface-variant hover:bg-on-surface-variant transition-all"></button>
+</div>
+<div class="hidden sm:flex items-center gap-space-xs text-outline font-label-sm text-label-sm tracking-widest uppercase">
+<span>Archive Index</span>
+<span class="text-primary font-bold">01</span>
+<span>/ 05</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Trending Now (Horizontal Rail with Category Filter Tabs) -->
+<section class="w-full py-space-xl bg-background">
+<div class="w-full px-margin-mobile md:px-margin">
+<!-- Section Header with Filters and Actions -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-md pb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs pb-1">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Curated Catalog</span>
+</div>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+            Trending Now
+          </h2>
+</div>
+<div class="flex items-center justify-between md:justify-end gap-space-md">
+<!-- Filter Tabs -->
+<div class="flex items-center gap-space-xs p-1 rounded-full bg-surface-container-low" id="trending-filters">
+<button class="filter-tab px-space-md py-1 rounded-full bg-primary-container text-on-primary-container font-label-sm text-label-sm tracking-wider uppercase transition-colors" onclick="switchFilter(this, 'all')" type="button">All</button>
+<button class="filter-tab px-space-md py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm tracking-wider uppercase transition-colors" onclick="switchFilter(this, 'films')" type="button">Films</button>
+<button class="filter-tab px-space-md py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm tracking-wider uppercase transition-colors" onclick="switchFilter(this, 'series')" type="button">Series</button>
+<button class="filter-tab px-space-md py-1 rounded-full text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm tracking-wider uppercase transition-colors" onclick="switchFilter(this, 'sound')" type="button">Sound</button>
+</div>
+<!-- Rail Navigation Buttons -->
+<div class="hidden sm:flex items-center gap-space-xs">
+<button aria-label="Scroll left" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors shadow-md" onclick="scrollRail('trending-rail', -320)" type="button">
+<span class="material-symbols-outlined text-title-sm">chevron_left</span>
+</button>
+<button aria-label="Scroll right" class="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors shadow-md" onclick="scrollRail('trending-rail', 320)" type="button">
+<span class="material-symbols-outlined text-title-sm">chevron_right</span>
+</button>
+<a class="ml-space-xs font-label-sm text-label-sm tracking-wider text-primary uppercase hover:underline" data-path="movies-and-tv" href="#">
+              View All
+            </a>
+</div>
+</div>
+</div>
+<!-- 5 Vertical Poster Cards Rail (Horizontal overhanging) -->
+<div class="flex gap-space-lg overflow-x-auto pb-space-sm pt-space-xs scroll-smooth no-scrollbar -mr-margin-mobile md:-mr-margin pr-margin-mobile md:pr-margin" id="trending-rail">
+<!-- Card 1: SOLARIS REVISITED -->
+<div class="group relative flex-shrink-0 w-64 flex flex-col gap-space-sm cursor-pointer" data-category="films">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden bg-surface-container shadow-md group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Minimalist cinematic vertical poster of Solaris Revisited, ocean planets in monochromatic deep slate blue and warm umber highlights, silhouette of solitary cosmonaut gazing into pulsating waves, film festival typography style" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCZ7EJinOjQki9N1550oRBvffS5Eiu5PVMRwHEVaYqB320ceT7PPfV5tZbIYMd0YXz0vtfVCq2MuGzWSLBbA8jzFlxYBYu-QfpEHs88hCH7991Om3zVATFNaKPCJSp3q3U41aUD59W3AV26XyxZossiDONmF61xvFimBTR-o6ftrVkm8JqyUpTez7-ienCD2muRxK5P3z-lacWyTpBOz9jemlXEDDqmL7eKKaem7dG5DhQE_fBD9b8U')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<!-- Rating Badge -->
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-sm flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>9.4</span>
+</div>
+<!-- Quick Bookmark Icon -->
+<button aria-label="Save to watchlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-sm text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); toggleCardBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<!-- Bottom Overlay Meta -->
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-on-surface font-semibold uppercase">Psychological</span>
+<span>1h 56m</span>
+</div>
+</div>
+<div>
+<a class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1" data-path="content-detail" href="#">
+              SOLARIS REVISITED
+            </a>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Andrei Tarkovsky Legacy Retrospective</p>
+</div>
+</div>
+<!-- Card 2: NEON DRIFT -->
+<div class="group relative flex-shrink-0 w-64 flex flex-col gap-space-sm cursor-pointer" data-category="series">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden bg-surface-container shadow-md group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vertical cinema poster for Neon Drift, rainy retro-futuristic metropolis illuminated by vibrant amber and crimson neon reflections, sleek autonomous vehicles speeding through elevated highway, cyberpunk cinematic tone" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB1bgnoDDdg4Z84CmveSI2WiOkKzdalf4hZvJn3FjS-vpGHYcxfEZEK-jhSGUZZ-LwlyV_ZCAXVsuldLa-ioFo6OpaW3DHADGmTHTZt64v_vPtRbxIqqL0_dIvXBko4N1gc--35xFLSwZrhKbsWzfq9lBAG_A6HNzXPlncrhHVBWjiETyi8z3eJ7Xp3HI0Fh8GdwZRe89ENyjylUT7jQzprtef8HmQG7gn8qNutvWle2B8iggXNSUKa')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-sm flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>9.1</span>
+</div>
+<button aria-label="Save to watchlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-sm text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); toggleCardBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-on-surface font-semibold uppercase">Neo-Noir</span>
+<span>8 Episodes</span>
+</div>
+</div>
+<div>
+<a class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1" data-path="content-detail" href="#">
+              NEON DRIFT
+            </a>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">A Shinjuku Midnight Odyssey</p>
+</div>
+</div>
+<!-- Card 3: AFTER THE RAIN -->
+<div class="group relative flex-shrink-0 w-64 flex flex-col gap-space-sm cursor-pointer" data-category="films">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden bg-surface-container shadow-md group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vertical art film poster for After The Rain, serene misty Kyoto bamboo forest with soft dappled afternoon daylight through mist, Japanese poetic cinematic style, muted greens and warm stone textures" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuARD3v7pJU-H0hWoZ9A_kX5bW107cTDjT0Ika4ChexHoyqM32Y9G3nbt0kR-sGD8DSqQJDk6JCkVEaCvto5_QhIIK5GB2G-mBpcE7CuemNO0SMuSbaj7eSGPwK35AJ9ZUqT6Kft-cQiQLgwYWy4-mlFeRc4N8TSZq2FSST0eXqEvS_667nX-OvX2yXRjXQWgjd198Ca9-ti4nIN3Lzkj5MZJrfB_5SPIR2Y6K4Iaz1AnHDFImy32tWO')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-sm flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>8.9</span>
+</div>
+<button aria-label="Save to watchlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-sm text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); toggleCardBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-on-surface font-semibold uppercase">Drama</span>
+<span>1h 48m</span>
+</div>
+</div>
+<div>
+<a class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1" data-path="content-detail" href="#">
+              AFTER THE RAIN
+            </a>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Cannes Jury Grand Prix 2025</p>
+</div>
+</div>
+<!-- Card 4: THE ARCHIVIST -->
+<div class="group relative flex-shrink-0 w-64 flex flex-col gap-space-sm cursor-pointer" data-category="films">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden bg-surface-container shadow-md group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vertical cinema poster for The Archivist, labyrinthine underground brutalist vault holding millions of magnetic tape reels and film canisters, cold ambient amber backlight, heavy architectural geometry" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6L8xscL6F1D3mO7R1ydVO3vlhHNi6dM6ILy2MilNeJlZTi9EzXJNufTDy517xoqXI07M3zXVc4QnSGgLDIvVDewR-UJt8AJsJc6yZahG0Rtt05B4rXdWfQWK61Ehnix-FpXHdvWWm9E48pSt0_C4Ii2WZHKPBzX2d5sMFcE6jZiCZggxNEYU6DR2-Ok9JmhKM3L5XKtGOXBEluv4me0Gk-Jq5LaEyYbj1OVS_QNQsEYN_EaM77BY_')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-sm flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>9.3</span>
+</div>
+<button aria-label="Save to watchlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-sm text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); toggleCardBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-on-surface font-semibold uppercase">Documentary</span>
+<span>2h 02m</span>
+</div>
+</div>
+<div>
+<a class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1" data-path="content-detail" href="#">
+              THE ARCHIVIST
+            </a>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Preserving The Lost Nitrate Canvases</p>
+</div>
+</div>
+<!-- Card 5: SYNTHESIS -->
+<div class="group relative flex-shrink-0 w-64 flex flex-col gap-space-sm cursor-pointer" data-category="sound">
+<div class="relative w-full aspect-[2/3] rounded-xl overflow-hidden bg-surface-container shadow-md group-hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-1">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Vertical album and film poster for Synthesis, modular analog synthesizers patched with vintage braided patch cables, oscilloscope displaying glowing warm phosphor audio frequency waveforms, dark moody studio" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBf2lJrI1fn1jHGFfTF5a0smMWj9QmvGlBCaWdU18k-OI9J7wdbOmgBhtihk6XQ-N6jiirq7Oga1Q1tCciURLOjhJn-HmoNTLvtr2a6fC-Mhf5L3XkY0N_jEiumAT1S7keqqU--TsA7K2Cew1RDqv8yYrvNSS6yvyUOoBVkMvY-h4hzntCW-nqF0Pe5ow7qL4ybeTOALUvTCTtnZudy6ilDJyXRXBwzNR7qPPR_A-6r3yvqDbs9ooB9')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute top-3 left-3 px-2 py-1 rounded bg-surface-container-lowest/80 backdrop-blur-sm flex items-center gap-1 font-label-sm text-label-sm text-on-surface">
+<span class="material-symbols-outlined text-[13px] text-primary" style="font-variation-settings: 'FILL' 1;">star</span>
+<span>9.5</span>
+</div>
+<button aria-label="Save to watchlist" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-container-lowest/70 backdrop-blur-sm text-on-surface-variant hover:text-primary flex items-center justify-center transition-colors" onclick="event.stopPropagation(); toggleCardBookmark(this)" type="button">
+<span class="material-symbols-outlined text-[16px]">bookmark_border</span>
+</button>
+<div class="absolute bottom-3 inset-x-3 flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="px-2 py-0.5 rounded bg-surface-container-high/90 text-on-surface font-semibold uppercase">Sound Film</span>
+<span>1h 32m</span>
+</div>
+</div>
+<div>
+<a class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1" data-path="music" href="#">
+              SYNTHESIS
+            </a>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Spatial Acoustics &amp; Analog Geometry</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Continue Watching (16:9 Interactive Scrub & Resume Rail) -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="w-full px-margin-mobile md:px-margin">
+<div class="flex items-center justify-between pb-space-lg">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-title-lg">resume</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">
+            Continue Watching
+          </h2>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-sm text-label-sm text-outline tracking-wider uppercase">3 In Progress</span>
+</div>
+</div>
+<!-- 16:9 Thumbnail Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-lg">
+<!-- Episode Item 1 -->
+<div class="group relative flex flex-col gap-space-xs bg-surface-container-low rounded-xl overflow-hidden p-space-sm shadow-md hover:bg-surface-container transition-all">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic 16:9 frame from a space station interior, a researcher observing a spinning magnetic centrifuge with blue neon luminescence, dark cinematic atmosphere" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCA_UJUTlh7jRLiTkQLvcECzjpq1Gy9Coyk4ov13oWvKeYVwY0u0mCWKuCEJkJgHCG5Z-zykSlhmZ6BhVSMeaLLp7X91auWEjAGXBYte_t-AS1fI3-c7-tFey0ZtwodBClMhV5X0Dyx2uis6D1NNzEd8Oy3vaA7wO2SuV2EG1Ljvfblt2Rrkc5C0-p0cH2ejR0IXgd2wX1JMJkEvD60aYfc0dWs0lHAqA-QxJX0bXu7rww34F6G3eKS')"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-surface-container-lowest/10 transition-colors"></div>
+<!-- Play Button Overlay -->
+<a aria-label="Resume Episode" class="absolute inset-0 flex items-center justify-center focus:outline-none" data-path="content-detail" href="#">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center transform scale-90 opacity-90 group-hover:scale-100 group-hover:opacity-100 transition-all shadow-xl">
+<span class="material-symbols-outlined text-title-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</a>
+<!-- Playback Progress Bar -->
+<div class="absolute bottom-0 inset-x-0 h-1.5 bg-surface-container-highest">
+<div class="h-full bg-primary-container" style="width: 64%;"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-col gap-0.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold">S2 · E4: The Event Horizon</span>
+<span>28m left</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">
+              Chronos: Void
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs line-clamp-1">
+              The resonance expands into the secondary observation deck.
+            </p>
+</div>
+</div>
+<!-- Episode Item 2 -->
+<div class="group relative flex flex-col gap-space-xs bg-surface-container-low rounded-xl overflow-hidden p-space-sm shadow-md hover:bg-surface-container transition-all">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic 16:9 still from a noir crime drama, shadows of two figures standing in a high-rise office looking out over rain-slicked Tokyo skyline at 3 AM" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCjtLv7NjXy62qxXiIVgbFbB9XeipCsrG0jHkEkbJv59cw-1oo47Xckonkr4xSTMO37Wc6PwXdiCqwdhJE85o3uK9V04K-8Yu3OPJxH_t2Rfr3SBbLRTlsRvpsYgUB5MKSpAlgSukUmHDE1TFRsvJESnRH_yS1i_fCentsvmNaZzC3EVap3MN2cXliVCs2rf5VtpZOXR_DBzALwMqTHfdGwhVP7u0TGNremI66HRm67t1vwFE_2c2o5')"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-surface-container-lowest/10 transition-colors"></div>
+<a aria-label="Resume Episode" class="absolute inset-0 flex items-center justify-center focus:outline-none" data-path="content-detail" href="#">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center transform scale-90 opacity-90 group-hover:scale-100 group-hover:opacity-100 transition-all shadow-xl">
+<span class="material-symbols-outlined text-title-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</a>
+<div class="absolute bottom-0 inset-x-0 h-1.5 bg-surface-container-highest">
+<div class="h-full bg-primary-container" style="width: 82%;"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-col gap-0.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold">S1 · E6: Red Horizon Echo</span>
+<span>08m left</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">
+              Neon Drift
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs line-clamp-1">
+              Kaito decodes the intercepted frequency on sub-level 4.
+            </p>
+</div>
+</div>
+<!-- Episode Item 3 -->
+<div class="group relative flex flex-col gap-space-xs bg-surface-container-low rounded-xl overflow-hidden p-space-sm shadow-md hover:bg-surface-container transition-all">
+<div class="relative w-full aspect-video rounded-lg overflow-hidden bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Cinematic 16:9 still from a music documentary, conductor with raised baton in front of an 80-piece orchestra inside a brutalist concrete cathedral hall with shafts of warm light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMTuX9obpsw2qoQGCbBFGvHKsY7T0IczzNyMgkMVCACLrglKnaP4cvrnD1YnC0-BVeLruwDwyt0-C3x8O1x9-SZsoC1Dl5jYZDsqXYMDtWRyC_Q_cEMM9ZR2DZ4QyRBsqCWLM1cSXwr4UqBS2M26n1jOaTRUgIUg9wv5BmZ2frNugBZQkc_Oss4h5kKni-71DYaGP-6NTdX_YrjYtFODNA_UJNX_v8sXT-R7VAQlsT4wd5c8cf1H-j')"></div>
+<div class="absolute inset-0 bg-surface-container-lowest/30 group-hover:bg-surface-container-lowest/10 transition-colors"></div>
+<a aria-label="Resume Episode" class="absolute inset-0 flex items-center justify-center focus:outline-none" data-path="music" href="#">
+<div class="w-12 h-12 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center transform scale-90 opacity-90 group-hover:scale-100 group-hover:opacity-100 transition-all shadow-xl">
+<span class="material-symbols-outlined text-title-lg" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</div>
+</a>
+<div class="absolute bottom-0 inset-x-0 h-1.5 bg-surface-container-highest">
+<div class="h-full bg-primary-container" style="width: 35%;"></div>
+</div>
+</div>
+<div class="pt-space-xs flex flex-col gap-0.5">
+<div class="flex items-center justify-between text-on-surface-variant font-label-sm text-label-sm">
+<span class="text-primary font-semibold">Part II: Resonant Frequencies</span>
+<span>44m left</span>
+</div>
+<h3 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors">
+              Acoustic Architecture
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs line-clamp-1">
+              The physics of orchestral decay in mid-century concert halls.
+            </p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Featured Editorial Stories (Asymmetrical Split Composition) -->
+<section class="w-full py-space-xl bg-background">
+<div class="w-full px-margin-mobile md:px-margin">
+<!-- Section Tag & Heading -->
+<div class="flex items-center justify-between pb-space-lg">
+<div>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Obsidian Dispatch</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+            Cultural Features &amp; Essays
+          </h2>
+</div>
+<a class="hidden sm:inline-flex items-center gap-1 font-label-md text-label-md text-primary uppercase tracking-wider hover:underline" data-path="news" href="#">
+<span>Read All Essays</span>
+<span class="material-symbols-outlined text-title-sm">arrow_forward</span>
+</a>
+</div>
+<!-- Asymmetric Editorial Layout: Lead Card Left (7 cols) + 3 Stacked Cards Right (5 cols) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-stretch">
+<!-- Lead Feature Card (Left 7 Cols) -->
+<a class="group lg:col-span-7 relative flex flex-col justify-end p-space-lg md:p-space-xl rounded-2xl overflow-hidden bg-surface-container-low min-h-[460px] shadow-lg" data-path="news" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Artistic high-contrast portrait of acclaimed film director Denis Villeneuve in silhouette against an enormous desert sun and atmospheric camera crane rig, monochromatic cinematic grain with warm sepia grading" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBP9aI_SjRA5rt9213slbRa1ptlOYeoi6wLQVdFeiIUmNkkHZNSNOWutND6Adymgm30jLvRA_GL-BIkxO7xtnnCDzsRkZOS8uov1JNjlq0ZfNH85kqHsLxXEpat8bhj6aHfybjFzSCmFSsg8O9oMxCZgs_UNoXNyxSZuXZr-rMdOHVfqr4eFMPaIUPzUOAnWwSshIBfeqhWLB_heO_ezEoSBA_HWjbxww4FAmAtOBYAu1bsUj1BGXkX')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/60 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-space-xs max-w-xl">
+<div class="flex items-center gap-space-sm font-label-sm text-label-sm">
+<span class="px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-bold uppercase tracking-wider">Director's Cut</span>
+<span class="text-on-surface-variant font-medium">4 min read</span>
+<span class="text-outline-variant font-black">·</span>
+<span class="text-on-surface-variant">Editorial Interview</span>
+</div>
+<h3 class="font-headline-md md:font-headline-lg text-headline-md md:text-headline-lg text-on-surface group-hover:text-primary transition-colors leading-tight">
+              How Denis Villeneuve Rebuilt the Epic Scale of Modern Cinema
+            </h3>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">
+              An exhaustive conversation on spatial geometry, tactile brutalism, and preserving practical sets in an era obsessed with virtual synthesis.
+            </p>
+<div class="pt-space-xs flex items-center gap-space-xs text-primary font-label-md text-label-md uppercase tracking-wider group-hover:translate-x-1 transition-transform">
+<span>Read Full Feature</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</div>
+</div>
+</a>
+<!-- Stacked Features (Right 5 Cols) -->
+<div class="lg:col-span-5 flex flex-col justify-between gap-space-md">
+<!-- Story Item 1 -->
+<a class="group flex gap-space-md p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-path="news" href="#">
+<div class="relative flex-shrink-0 w-28 h-28 rounded-lg overflow-hidden bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Editorial close-up of tape loops rotating on an open-reel Studer tape recorder in an analog studio with soft red meter glow" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDyqAvXLOLf729m5Foa4S0rnKuHCDYpaGxV3QWC6CmfRYt7YJjWONQn32HWBUFSQyg3zESfcbdTgZe2ION5AR5f617xDfFPAACmluw1cfKoLs2PvxfKUiRxezwz1M9L2vFSC9_IaAD3tKBWnUYONHOSC_hCzDxKlavQ9m4AyRvpuVFqpLmyIwvH6gEIcCoDElTKeQVXR0Fbot09kEvvvJnVn9NQ11u9orH9fJeSs06lYX5Wj85pBk0-')"></div>
+</div>
+<div class="flex flex-col justify-center gap-1 min-w-0">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-primary uppercase font-bold">Sound Archive</span>
+<span>· 6 min read</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                The 10 Film Scores That Redefined Electronic Music in 2026
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs truncate">
+                From microtonal synthesizers to processed bio-acoustic loops.
+              </p>
+</div>
+</a>
+<!-- Story Item 2 -->
+<a class="group flex gap-space-md p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-path="news" href="#">
+<div class="relative flex-shrink-0 w-28 h-28 rounded-lg overflow-hidden bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Cinematic still of cinematographer Roger Deakins standing behind an ARRI Alexa 65 on an overcast salt flat with massive bounce scrims" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDvsQEtPWgPeQeSVWpdU_CGrJLZH_wYz-IR1MC51zU_uELBDtj_QOTR3Ut3HCpLe4KY9oWHg1e1G0jZ_SDqr_dkGjpdZjQ0g7K5ADPXoTSwpDBPLI1SBHbCGhuSHpLgxG5Kd9rJBouakB7YM-_n5qvLIQck4kFR4Om-K1-H9VxGJrLM_Bu5fqgArXy-pPrMejyCUzB2Rk1d0WhJ1UYWy46rEXLRhLSiA4g8uaEgG6nft4XkYEMKW8Ev')"></div>
+</div>
+<div class="flex flex-col justify-center gap-1 min-w-0">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-primary uppercase font-bold">Craft &amp; Light</span>
+<span>· 8 min read</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Behind the Lens: Roger Deakins on Lighting the Impossible
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs truncate">
+                Simulating practical candle flickers and sub-surface diffusion.
+              </p>
+</div>
+</a>
+<!-- Story Item 3 -->
+<a class="group flex gap-space-md p-space-md rounded-xl bg-surface-container-low hover:bg-surface-container transition-all shadow-sm" data-path="news" href="#">
+<div class="relative flex-shrink-0 w-28 h-28 rounded-lg overflow-hidden bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-300 group-hover:scale-105" data-alt="Minimalist modern art museum screening room with viewers seated in front of a giant pristine borderless cinema canvas, elegant architecture" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCyD14umudKxhR5ioTCXjs--85DYIn0YlIKBQ1kkXxRjs28hQjksw0rHu1hL3yw5F8wn0fo_K2IlgUXhkcFeUdGWTNnMqwbs4yYekzD5PI4yWucvtIC6dnZK-KW54Z631J-MMiCn4d3YnjiQbh_7o935fMEAdKy7LQWrMp9OmYUsNXtQK_XT4viE6UTbBJIugyEXqUJ2XhUqwdnolqsJbEjmKg6WdDYADjyHAOar_IrJnxND2SHAtoC')"></div>
+</div>
+<div class="flex flex-col justify-center gap-1 min-w-0">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="text-primary uppercase font-bold">Industry Essay</span>
+<span>· 5 min read</span>
+</div>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-2">
+                Why Independent Streaming Platforms Are Beating Legacy Studios
+              </h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-xs truncate">
+                Curated scarcity vs. algorithmic content dilution.
+              </p>
+</div>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 5: Popular This Week (Mixed Cultural Matrix Bento Grid) -->
+<section class="w-full py-space-xl bg-surface-container-lowest">
+<div class="w-full px-margin-mobile md:px-margin">
+<!-- Section Title & Descriptor -->
+<div class="flex flex-col md:flex-row md:items-end justify-between pb-space-lg gap-space-sm">
+<div>
+<span class="font-label-sm text-label-sm text-primary tracking-widest uppercase">Cross-Media Matrix</span>
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface">
+            Popular This Week Across The Arts
+          </h2>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-primary-container"></span> Films</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-surface-bright"></span> Soundtracks</span>
+<span class="flex items-center gap-1"><span class="w-2 h-2 rounded-full bg-outline"></span> Retrospectives</span>
+</div>
+</div>
+<!-- Bento Grid with Varied Card Proportions -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-lg">
+<!-- Matrix 1: Film Showcase (Large Span 2 on Desktop) -->
+<a class="group lg:col-span-2 relative rounded-2xl overflow-hidden bg-surface-container flex flex-col justify-end p-space-lg min-h-[360px] shadow-lg" data-path="movies-and-tv" href="#">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Wide cinematic photograph from the movie Kyoto Snowfall, a geisha standing under an umbrella during heavy falling snow at night near a wooden shrine bridge, high visual impact" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDKu4RvW31IHxn11wKF41LSn09xPVUva2VHbxueiAw225yDY3kBqXY9PBEiOhytuyDw23HrCa53oHXbuMOooc2YVLh2HiNRqjcQw611l0opTFxvEm6cwNKsKavrVZF9qvD7ltrKnNQXU8GHIEx92-AhWsC-TYGGgVHDJVt9RFLgXOGUawsFUk1wjEkP-xtcOK4O1J-qRLaSIWzkbfJXGXCiiiOA5IfJ1aKbLEDYyq9QFV5pDT4N0Q05')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/50 to-transparent"></div>
+<div class="relative z-10 flex flex-col gap-1">
+<div class="flex items-center gap-space-xs font-label-sm text-label-sm text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container-highest text-on-surface font-semibold uppercase">Feature Film</span>
+<span>· 2h 05m</span>
+<span class="text-primary font-bold ml-auto flex items-center gap-0.5">
+<span class="material-symbols-outlined text-[14px]">star</span> 9.6
+              </span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface group-hover:text-primary transition-colors">
+              Kyoto Snowfall
+            </h3>
+<p class="font-body-md text-body-md text-secondary line-clamp-2">
+              A fragile truce between two rival tea masters dissolves during the harshest blizzard in ninety years.
+            </p>
+</div>
+</a>
+<!-- Matrix 2: Album Spotlight (Square 1:1 format) -->
+<a class="group relative rounded-2xl overflow-hidden bg-surface-container-low flex flex-col p-space-md shadow-md hover:bg-surface-container transition-all" data-path="music" href="#">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Square vinyl album cover artwork for Ambient Works IV, abstract textured geometric black and copper metallic foil embossing on heavy handmade paper, minimalist typography" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB61NDVApeRWLQ29X-SRx7cjIoswJnJY1376k9XdIkqtnw_VuRkxBztV8niyy2P0pp-xok7E1aluFSsCn_g9kT43DijtNqHt4_uHT5OCbeJZHjPE91pyU0Ziz8vgrBSSb2kpB9a-BS5zAAqwz1vbpLRMORgDb1Bourfsu6xuZhAdam7AuuWYwetW_q0VQ32Kq4F3QQhG4Talei2Er4WeCF6vyXKUDp6VWqBP_1HSxu_j3y5xfSYa4Ob')"></div>
+<div class="absolute top-2 right-2 px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm text-primary font-label-sm text-label-sm uppercase font-bold">
+              FLAC 96/24
+            </div>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Original Score</span>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Subsurface Reverberations
+            </h4>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">Mica Levi &amp; Hildur Guðnadóttir</span>
+</div>
+</a>
+<!-- Matrix 3: Artist Spotlight (Vertical Portrait) -->
+<a class="group relative rounded-2xl overflow-hidden bg-surface-container-low flex flex-col p-space-md shadow-md hover:bg-surface-container transition-all" data-path="content-detail" href="#">
+<div class="relative w-full aspect-square rounded-xl overflow-hidden bg-surface-container-high mb-space-sm">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 group-hover:scale-105" data-alt="Moody black and white close-up portrait of French filmmaker Claire Denis looking through a vintage 35mm view finder, soft directional studio key light" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAokXO-n6tM_tAElvfxEYjmOJTA5AODldPwzb55yHYAahs0prILY-YD_31hLaqjRUaQEPrHjNDeHoCnamztc8FxD2ET0w55FckrdvS0w-p7q3clptZfcAJ_4w_XCnhEbjlFxK3S-aGyhr1-dq1IHXRUn77sKkWrD0xRj5c4oq6BRPKgAf84AodJp15BHsYlkGcboNlNgKiR1wgQWpIHbcwi72iMjCSx0E5tQpOV7eBLIFgGykIhXQ4C')"></div>
+<div class="absolute bottom-2 left-2 px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-bold">
+              Retrospective
+            </div>
+</div>
+<div class="flex flex-col gap-0.5">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Auteur Collection</span>
+<h4 class="font-title-sm text-title-sm text-on-surface group-hover:text-primary transition-colors line-clamp-1">
+              Claire Denis: Tactile Flesh
+            </h4>
+<span class="font-body-md text-body-md text-on-surface-variant text-xs">14 Remastered 4K Works</span>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Interactive Client-side Scripting for UI Microinteractions -->
+<script>
+    // Bookmark Toggle for Hero Button
+    function toggleBookmark(btn) {
+      const icon = btn.querySelector('.icon-state');
+      const label = btn.querySelector('.label-state');
+      const isSaved = icon.innerText === 'check';
+
+      if (isSaved) {
+        icon.innerText = 'add';
+        label.innerText = 'Add to Watchlist';
+        btn.classList.remove('bg-primary-container', 'text-on-primary-container');
+        btn.classList.add('bg-surface-container-high/60', 'text-on-surface');
+      } else {
+        icon.innerText = 'check';
+        label.innerText = 'In Watchlist';
+        btn.classList.remove('bg-surface-container-high/60', 'text-on-surface');
+        btn.classList.add('bg-primary-container', 'text-on-primary-container');
+      }
+    }
+
+    // Card Bookmark Toggle
+    function toggleCardBookmark(btn) {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon.innerText === 'bookmark_border') {
+        icon.innerText = 'bookmark';
+        icon.style.fontVariationSettings = "'FILL' 1";
+        btn.classList.add('text-primary');
+      } else {
+        icon.innerText = 'bookmark_border';
+        icon.style.fontVariationSettings = "'FILL' 0";
+        btn.classList.remove('text-primary');
+      }
+    }
+
+    // Horizontal Rail Smooth Scroller
+    function scrollRail(railId, distance) {
+      const rail = document.getElementById(railId);
+      if (rail) {
+        rail.scrollBy({ left: distance, behavior: 'smooth' });
+      }
+    }
+
+    // Category Filter Switcher
+    function switchFilter(activeBtn, category) {
+      const container = document.getElementById('trending-filters');
+      const buttons = container.querySelectorAll('.filter-tab');
+      
+      buttons.forEach(b => {
+        b.classList.remove('bg-primary-container', 'text-on-primary-container');
+        b.classList.add('text-on-surface-variant');
+      });
+
+      activeBtn.classList.remove('text-on-surface-variant');
+      activeBtn.classList.add('bg-primary-container', 'text-on-primary-container');
+
+      const cards = document.querySelectorAll('#trending-rail > [data-category]');
+      cards.forEach(card => {
+        if (category === 'all' || card.getAttribute('data-category') === category) {
+          card.style.display = 'flex';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest py-space-xl mt-auto"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Obsidian Cinema Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIC29jnbC-z20lkMRVAn7mNLYRu3IvoXP0jS4_sBpTHHF2RANfPAkHwjA1kNndVcURhvSbuUX3Sa8pD0SdIuvVokXtXAqy4Hc6yLDfdocmko4trdKEuIymiUtMnCPMJHvjY4bNDsq0xvSRH9aSEcK5vraseSTglQfsfqkR6VfZ_eaQyMSgR48XmziHW3SrfoX0MHG1vE0wEO_eyQz5Vju_5RqOu2ZXXzl7_GCe7aAuqI5ymZ4swA5-evI"/><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase">Obsidian</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">The curated intersection of cinema, sound, and culture. Archival depth meets contemporary moving image arts.</p><div class="flex items-center gap-space-md pt-space-xs"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">ISSN 2831-904X</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Festival Network</span></div></div><div class="flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Explore</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="movies-and-tv" href="#">Movies &amp; TV</a></li><li><a class="hover:text-on-surface transition-colors" data-path="music" href="#">Music</a></li><li><a class="hover:text-on-surface transition-colors" data-path="news" href="#">Editorial Stories</a></li><li><a class="hover:text-on-surface transition-colors" data-path="collections" href="#">Collections</a></li><li><a class="hover:text-on-surface transition-colors" data-path="awards-season" href="#">Awards Season</a></li><li><a class="hover:text-on-surface transition-colors" data-path="festivals" href="#">Festivals</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Institution</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="editorial-staff" href="#">Editorial Staff</a></li><li><a class="hover:text-on-surface transition-colors" data-path="submissions" href="#">Submissions</a></li><li><a class="hover:text-on-surface transition-colors" data-path="press" href="#">Press Relations</a></li><li><a class="hover:text-on-surface transition-colors" data-path="film-society" href="#">Film Society</a></li><li><a class="hover:text-on-surface transition-colors" data-path="careers" href="#">Careers</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Archive &amp; Law</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a></li><li><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li><a class="hover:text-on-surface transition-colors" data-path="cookie-preferences" href="#">Cookie Preferences</a></li><li><a class="hover:text-on-surface transition-colors" data-path="content-ratings" href="#">Content Ratings</a></li><li><a class="hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></li></ul></div><div class="lg:col-span-1 flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">The Dispatch</span><p class="font-body-md text-body-md text-on-surface-variant">Weekly curated cinema and acoustic essays delivered to your terminal.</p><form class="flex flex-col gap-space-xs" onsubmit="event.preventDefault()"><div class="flex items-center rounded bg-surface-container-low p-space-xs"><input class="w-full bg-transparent px-space-xs font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="Your email" type="email"/><button class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary transition-colors" type="submit">Join</button></div><span class="font-label-sm text-label-sm text-outline tracking-wider">Unsubscribe at any time.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">© 2026 OBSIDIAN Media Group. All rights reserved.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Curated in Geneva &amp; Tokyo</span></div></div></div></footer></body></html>
