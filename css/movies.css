@@ -685,142 +685,187 @@ body{
     font-weight: bold;
 }
 
-@media (max-width: 768px){
-
-    .article1{
+@media (max-width: 980px){
+    .article1,
+    .monograph,
+    .consensus,
+    .festival-section,
+    .music-section {
         max-width: 900px;
         margin: auto;
-        padding: 50px;
+        padding-left: 24px;
+        padding-right: 24px;
     }
-    .rightt{
+
+    .rightt {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
+        gap: 18px;
     }
-    .spot img{
-        width: 100%;
-        height: 400px;
-    }
-    .spot-lyt{
-        position: absolute;
-        left: 8px;
-        bottom: 15px;
-    }
-    .spot-lyt p{
-    font-size: 9px;    
-    }
-    .spot-lyt a{
-        font-size: 10px;
-    }
-    .spot-lyt h1{
-        font-size: 30px;
-    }
-    .spot-lyt h6{
-        font-size: 30px;
-    }
-    .spot-lyt span{
-        font-size: 15px;
-    }
-    .run-item svg{
 
+    .stats {
+        width: min(100%, 560px);
     }
-    .run-item{
 
+    .spot-lyt {
+        left: 24px;
+        right: 24px;
+        bottom: 26px;
     }
-    .run-item h5{
-        font-size: 10px;
-    }
-    .PLAY h4{
-        font-size: 10px;
-    }
-    .PLAY{
 
+    .spot-lyt h1,
+    .spot-lyt h6 {
+        font-size: clamp(2.1rem, 5vw, 3rem);
+        line-height: 1.05;
     }
-    .monograph{ 
-        max-width: 900px;
-        margin: auto;
-        padding: 50px;
+
+    .play-wrapper {
+        flex-wrap: wrap;
     }
-    .mono-flex span{
-        padding-top: 10px;
+
+    .movie-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
-    .movie-grid{
-        display: grid;
-        grid-template-columns: 3fr 3fr 3fr;
+
+    .review-card {
+        flex-basis: calc((100% - 24px) / 2);
     }
-    .consensus{
-        max-width: 900px;
-        margin: auto;
-        padding: 50px;
+
+    .movi-cd {
+        width: calc(50% - 8px);
     }
-    .review-top{
-        width: 400px;
-    }
-    .review-item{
-        display: block;
-        margin-top: 10%;
-    }
-    .category{
-        margin-bottom: 10%;
-        margin-left: 14%;
-    }
-    .festival-section{
-        max-width: 900px;
-        margin: auto;
-        padding: 50px;
-    }
-    .movi-cd{
-        width: 400px;
-    }
-    .music-section{
-        max-width: 900px;
-        margin: auto;
-        padding: 50px;
+
+    .music-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
-@media (max-width: 480px){
-    body{
-        max-width: 480px;
-        margin: auto;
+
+@media (max-width: 700px){
+    .arch h1 {
+        font-size: clamp(2.7rem, 12vw, 4.1rem);
+        line-height: 0.96;
     }
-    .arch h1{
-        font-size: 50px;
-        font-style:oblique;
-        overflow: auto;
-    }
-    .arch-item{
-        display: grid;
-        gap: 10px;
-        grid-template-columns: 1fr;
-    }
-    .rightt{
-        display: grid;
-        grid-template-columns: 1fr;
+
+    .arch-item {
+        display: flex;
+        flex-wrap: wrap;
         gap: 10px;
     }
-    .stat{
-        display: none;
+
+    .a-item {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 8px 12px;
     }
-    .spot-lyt{
-        font-size: 15px;
-        position: absolute;
-        left: 15px;
+
+    .spot img {
+        height: 420px;
     }
-    .spot img{
-        height: 700px;
+
+    .spot-lyt p {
+        font-size: 9px;
     }
-    .movie-grid{
-        display: grid;
+
+    .spot-lyt a {
+        font-size: 10px;
+    }
+
+    .spot-lyt span {
+        font-size: 14px;
+    }
+
+    .run-item h5 {
+        font-size: 10px;
+    }
+
+    .PLAY h4 {
+        font-size: 10px;
+    }
+
+    .movie-grid,
+    .music-grid {
         grid-template-columns: 1fr 1fr;
     }
-    .music-section{
+
+    .review-card {
+        flex-basis: 100%;
+    }
+
+    .movi-cd {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px){
+    body {
         max-width: 480px;
         margin: auto;
-        padding-left: 40px;
-        padding-right: 40px;
     }
-    .music-grid{
+
+    .article1,
+    .monograph,
+    .consensus,
+    .festival-section,
+    .music-section {
+        max-width: 480px;
+        margin: auto;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .arch-list {
+        padding-top: 28px;
+    }
+
+    .arch-item {
         display: grid;
-        grid-template-columns: 1fr;       
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .arch-item span,
+    .arch-item strong {
+        margin-left: 0;
+    }
+
+    .stat {
+        display: none;
+    }
+
+    .spot {
+        overflow: hidden;
+    }
+
+    .spot img {
+        height: 560px;
+    }
+
+    .spot-lyt {
+        left: 16px;
+        right: 16px;
+        bottom: 16px;
+    }
+
+    .play-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .PLAY {
+        width: 100%;
+        text-align: center;
+    }
+
+    .movie-grid,
+    .music-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .section-heading,
+    .festival-heading,
+    .music-heading {
+        align-items: flex-start;
+        gap: 12px;
     }
 }

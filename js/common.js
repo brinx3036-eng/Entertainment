@@ -16,6 +16,7 @@ header.innerHTML = `
             <a href="movies.html">MOVIES & TV</a>
             <a href="music.html">MUSIC</a>
             <a href="news.html">NEWS</a>
+            <a href="exhibitions.html">EXHIBITIONS</a>
         </div>
         <div class="nav-icon">
             <div class="search-box">
@@ -25,12 +26,15 @@ header.innerHTML = `
             <div class="bookmark">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" /></svg>
             </div>
-            <img src="">
             <div class="arrow-down">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
             </div>
         </div>
-        <button class="hamburger">=</button>
+        <button class="hamburger" aria-label="Open navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
     </div>       
 `;
 
@@ -49,28 +53,28 @@ footer.innerHTML = `
                 </div>
                 <div class="footer-column">
                     <h3>EXPLORE</h3>
-                    <a href="#">Movies & TV</a>
-                    <a href="#">Music</a>
-                    <a href="#">Editorial Stories</a>
-                    <a href="#">Collections</a>
-                    <a href="#">Awards Season</a>
-                    <a href="#">Festivals</a>
+                    <a href="movies.html#film-archive">Movies & TV</a>
+                    <a href="music.html#sound-archive">Music</a>
+                    <a href="news.html#dispatch">Editorial Stories</a>
+                    <a href="exhibitions.html#exhibition-archive">Collections</a>
+                    <a href="movies.html#festival-archive">Awards Season</a>
+                    <a href="movies.html#festival-archive">Festivals</a>
                 </div>
                 <div class="footer-column">
                     <h3>INSTITUTION</h3>
-                    <a href="#">Editorial Staff</a>
-                    <a href="#">Submissions</a>
-                    <a href="#">Press Relations</a>
-                    <a href="#">Film Society</a>
-                    <a href="#">Careers</a>
+                    <span>Editorial Staff</span>
+                    <span>Submissions</span>
+                    <span>Press Relations</span>
+                    <span>Film Society</span>
+                    <span>Careers</span>
                 </div>
                 <div class="footer-column">
                     <h3>ARCHIVE & LAW</h3>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
-                    <a href="#">Cookie Preferences</a>
-                    <a href="#">Content Ratings</a>
-                    <a href="#">Accessibility</a>
+                    <span>Privacy Policy</span>
+                    <span>Terms of Service</span>
+                    <span>Cookie Preferences</span>
+                    <span>Content Ratings</span>
+                    <span>Accessibility</span>
                 </div>
                 <div class="footer-column">
                     <h3>THE DISPATCH</h3>
@@ -100,6 +104,7 @@ sidebarWrapper.innerHTML = `
             <a href="movies.html">MOVIES & TV</a>
             <a href="music.html">MUSIC</a>
             <a href="news.html">NEWS</a>
+            <a href="exhibitions.html">EXHIBITIONS</a>
         </div>
     </div>
 `;

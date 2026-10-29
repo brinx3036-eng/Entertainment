@@ -599,110 +599,160 @@ body{
 }
 
 @media (max-width: 1024px){
-
-    .nav-item{
-        display: none;
-    }
-    .news-article{
+    .news-article,
+    .dispatch,
+    .interview {
         max-width: 900px;
         margin: auto;
-        padding: 50px
+        padding-left: 24px;
+        padding-right: 24px;
     }
-    .news-article h1{
-        font-size: 60px;
-        overflow: auto;
-        scrollbar-width: none;
-    }
-    .nav-icon{
-        display: none;
-    }
-    .dispatch{
-        max-width: 900px;
-        margin: auto;
-        padding: 50px 
-    }
-    .dispatch-heading h1{
-        width: 8px;
-    }
-    .dispatch-tabs span{
 
+    .news-article h1 {
+        font-size: clamp(3.3rem, 7vw, 5rem);
     }
-    .dispatch-tabs{
-        width: 10px;
+
+    .dispatch-heading {
+        display: grid;
+        gap: 16px;
     }
-    .interview img{
-        width: 100%;
+
+    .dispatch-tabs {
+        justify-content: flex-start;
+        flex-wrap: wrap;
     }
-    .interview{
+
+    .dispatch-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interview {
         display: grid;
         grid-template-columns: 1fr;
-        max-width: 900px;
-        margin: auto;
-        padding: 50px
     }
-    .interview-heading{
-        margin-top: -100px;
+
+    .interview img {
+        width: 100%;
+        max-height: 600px;
+    }
+
+    .interview-heading p {
+        padding-top: 20px;
+    }
+
+    .interview-read {
+        padding-top: 30px;
+        flex-wrap: wrap;
     }
 }
+
+@media (max-width: 700px){
+    .news-article {
+        padding-top: 180px;
+    }
+
+    .article-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-actions {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .read-btn {
+        flex: 1 1 auto;
+        justify-content: center;
+    }
+
+    .dispatch-tabs {
+        display: flex;
+        overflow-x: auto;
+        padding-bottom: 6px;
+        scrollbar-width: none;
+    }
+
+    .news-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+
+    .dispatch2 {
+        grid-template-columns: 1fr;
+        padding: 30px 24px;
+    }
+}
+
 @media (max-width: 480px){
-    body{
+    body {
         max-width: 480px;
         margin: auto;
     }
-    .news-article{
+
+    .news-article,
+    .dispatch,
+    .consonance,
+    .interview {
         max-width: 480px;
         margin: auto;
-        padding-left: 40px;
-        padding-right: 40px;
-        overflow: auto;
-        scrollbar-width: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .article-bottom{
+
+    .news-article {
+        padding-top: 130px;
+    }
+
+    .article-label {
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+
+    .article-bottom,
+    .article-actions {
+        display: grid;
+        gap: 12px;
+    }
+
+    .read-btn,
+    .bookmark {
+        width: 100%;
+    }
+
+    .author {
+        align-items: flex-start;
+    }
+
+    .dispatch-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    .dispatch-tabs {
         display: grid;
         grid-template-columns: 1fr;
-        gap: 10px;
+        width: 100%;
     }
-    .dispatch{
-        /* overflow: auto;
-        scrollbar-width: none; */
+
+    .story-content h2,
+    .news-content h2,
+    .index h1,
+    .intro h1 {
+        font-size: 1.9rem;
     }
-    .dispatch-heading{
-        display: block;
-        overflow: auto;
-        scrollbar-width: none;
+
+    .interview-heading h2 {
+        font-size: 2.2rem;
     }
-    .dispatch-tabs{
-        display: grid;
-        grid-template-columns: 1fr;
-        margin-left: 150px;
+
+    .interview-heading span {
+        font-size: 1.1rem;
     }
-    .dispatch-grid{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .news-cards{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .content{
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .dispatch2{
-        max-width: 480px;
-        margin: auto;
-        padding-left: 40px;
-        padding-right: 40px;
-    }
-    .interview{
-        overflow: auto;
-        scrollbar-width: none;
-    }
-    .dispatch2{
-        overflow: auto;
-        scrollbar-width: none;
-    }
-    .subscribe{
+
+    .subscribe {
         display: none;
     }
 }

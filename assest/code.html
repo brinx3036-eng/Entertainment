@@ -588,5 +588,30 @@
         }
       });
     }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      const pageRoutes = {
+        home: '../index.html',
+        'movies-and-tv': '../movies.html#film-archive',
+        music: '../music.html#sound-archive',
+        news: '../news.html#dispatch',
+        'content-detail': '../movies.html#title-grid',
+        collections: '../exhibitions.html#exhibition-archive',
+        'awards-season': '../movies.html#festival-archive',
+        festivals: '../movies.html#festival-archive'
+      };
+
+      document.querySelectorAll('a[data-path]').forEach(link => {
+        const route = pageRoutes[link.dataset.path];
+        if (route) {
+          link.href = route;
+        } else {
+          const label = document.createElement('span');
+          label.className = link.className;
+          label.replaceChildren(...link.childNodes);
+          link.replaceWith(label);
+        }
+      });
+    });
   </script>
 </div></main><footer class="w-full bg-surface-container-lowest py-space-xl mt-auto"><div class="w-full px-margin"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-6 gap-space-xl pb-space-xl"><div class="lg:col-span-2 flex flex-col gap-space-md"><div class="flex items-center gap-space-sm"><img alt="Obsidian Cinema Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WIC29jnbC-z20lkMRVAn7mNLYRu3IvoXP0jS4_sBpTHHF2RANfPAkHwjA1kNndVcURhvSbuUX3Sa8pD0SdIuvVokXtXAqy4Hc6yLDfdocmko4trdKEuIymiUtMnCPMJHvjY4bNDsq0xvSRH9aSEcK5vraseSTglQfsfqkR6VfZ_eaQyMSgR48XmziHW3SrfoX0MHG1vE0wEO_eyQz5Vju_5RqOu2ZXXzl7_GCe7aAuqI5ymZ4swA5-evI"/><span class="font-headline-md text-headline-md tracking-wider text-on-surface uppercase">Obsidian</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-sm">The curated intersection of cinema, sound, and culture. Archival depth meets contemporary moving image arts.</p><div class="flex items-center gap-space-md pt-space-xs"><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">ISSN 2831-904X</span><span class="w-1 h-1 rounded-full bg-outline-variant"></span><span class="font-label-sm text-label-sm tracking-widest uppercase text-outline">Festival Network</span></div></div><div class="flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Explore</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="movies-and-tv" href="#">Movies &amp; TV</a></li><li><a class="hover:text-on-surface transition-colors" data-path="music" href="#">Music</a></li><li><a class="hover:text-on-surface transition-colors" data-path="news" href="#">Editorial Stories</a></li><li><a class="hover:text-on-surface transition-colors" data-path="collections" href="#">Collections</a></li><li><a class="hover:text-on-surface transition-colors" data-path="awards-season" href="#">Awards Season</a></li><li><a class="hover:text-on-surface transition-colors" data-path="festivals" href="#">Festivals</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Institution</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="editorial-staff" href="#">Editorial Staff</a></li><li><a class="hover:text-on-surface transition-colors" data-path="submissions" href="#">Submissions</a></li><li><a class="hover:text-on-surface transition-colors" data-path="press" href="#">Press Relations</a></li><li><a class="hover:text-on-surface transition-colors" data-path="film-society" href="#">Film Society</a></li><li><a class="hover:text-on-surface transition-colors" data-path="careers" href="#">Careers</a></li></ul></div><div class="flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">Archive &amp; Law</span><ul class="flex flex-col gap-space-sm font-body-md text-body-md text-on-surface-variant"><li><a class="hover:text-on-surface transition-colors" data-path="privacy-policy" href="#">Privacy Policy</a></li><li><a class="hover:text-on-surface transition-colors" data-path="terms-of-service" href="#">Terms of Service</a></li><li><a class="hover:text-on-surface transition-colors" data-path="cookie-preferences" href="#">Cookie Preferences</a></li><li><a class="hover:text-on-surface transition-colors" data-path="content-ratings" href="#">Content Ratings</a></li><li><a class="hover:text-on-surface transition-colors" data-path="accessibility" href="#">Accessibility</a></li></ul></div><div class="lg:col-span-1 flex flex-col gap-space-md"><span class="font-label-md text-label-md uppercase tracking-wider text-on-surface">The Dispatch</span><p class="font-body-md text-body-md text-on-surface-variant">Weekly curated cinema and acoustic essays delivered to your terminal.</p><form class="flex flex-col gap-space-xs" onsubmit="event.preventDefault()"><div class="flex items-center rounded bg-surface-container-low p-space-xs"><input class="w-full bg-transparent px-space-xs font-body-md text-body-md text-on-surface placeholder:text-on-surface-variant focus:outline-none" placeholder="Your email" type="email"/><button class="px-space-md py-space-xs rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md hover:bg-primary transition-colors" type="submit">Join</button></div><span class="font-label-sm text-label-sm text-outline tracking-wider">Unsubscribe at any time.</span></form></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant tracking-wider uppercase">© 2026 OBSIDIAN Media Group. All rights reserved.</span><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">Curated in Geneva &amp; Tokyo</span></div></div></div></footer></body></html>

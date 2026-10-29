@@ -4,39 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EXHIBITIONS - obsidian</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/exhibitions.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="side-item">
-                    <div class="red-dot"></div>
-                    <span>OBSIDIAN</span>
-                    <h3>OBSIDIAN</h3>
+    <header></header>
+    <aside class="sidebar-wrapper"></aside>
+    <main class="exhibitions-page">
+        <section class="exhibition-hero" id="exhibition-archive">
+            <div class="exhibition-hero-content">
+                <p class="exhibition-kicker">OBSIDIAN CINEMATHEQUE / 2026 PROGRAMME</p>
+                <h1>Midnight Thrills</h1>
+                <p class="exhibition-subtitle">Noir in the 21st century</p>
+                <p class="exhibition-description">Six uncompromising stories of betrayal, neon-lit corridors, and moral ambiguity, selected by the Obsidian editorial board.</p>
+                <div class="exhibition-meta">
+                    <span>14 FEATURE WORKS</span>
+                    <span>28H 40M RUNTIME</span>
+                    <span>9.4 CURATOR INDEX</span>
                 </div>
-                <div class="nav-item">
-                    <a href="index.html">HOME</a>
-                    <a href="movies.html">MOVIES & TV</a>
-                    <a href="music.html">MUSIC</a>
-                    <a href="news.html">NEWS</a>
-                    <a href="exhibitions.html">EXHIBITIONS</a>
-                </div>
-                <div class="nav-icon">
-                    <div class="search-box">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" /></svg>
-                        <input type="search" placeholder="SEARCH">
-                    </div>
-                    <div class="bookmark">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">  <path stroke-linecap="round" stroke-linejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0 1 11.186 0Z" /></svg>
-                    </div>
-                    <img src="">
-                    <div class="arrow-down">
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">  <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" /></svg>
-                    </div>
+                <div class="exhibition-actions">
+                    <a class="exhibition-primary" href="movies.html#festival-archive">EXPLORE THE COLLECTION</a>
+                    <a class="exhibition-secondary" href="#selected-works">SELECTED WORKS</a>
                 </div>
             </div>
-        </nav>
-    </header>
+            <span class="exhibition-number">EXHIBITION / 042</span>
+        </section>
+        <section class="selected-works" id="selected-works">
+            <div class="selected-heading">
+                <div>
+                    <p>CURATED EXHIBITIONS</p>
+                    <h2>Stories after dark</h2>
+                </div>
+                <span>THREE COLLECTIONS / ONE ARCHIVE</span>
+            </div>
+            <div class="exhibition-grid">
+                <article class="exhibition-card">
+                    <a href="movies.html#title-grid" aria-label="Browse Chronos: Void in the film archive">
+                        <img src="assest/vimg1.jpg" alt="A cinematic still from Chronos: Void">
+                        <div class="exhibition-card-copy">
+                            <span>SCI-FI / 2026</span>
+                            <h3>Chronos: Void</h3>
+                            <p>A deep-orbit expedition finds time moving by unfamiliar rules.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="exhibition-card">
+                    <a href="movies.html#festival-archive" aria-label="Browse festival selections">
+                        <img src="assest/img20.jpg" alt="Festival selection: The Last Sleeper Car">
+                        <div class="exhibition-card-copy">
+                            <span>CANNES / JURY PRIZE</span>
+                            <h3>The Last Sleeper Car</h3>
+                            <p>A six-day rail passage dissolves the boundary between two pasts.</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="exhibition-card">
+                    <a href="news.html#dispatch" aria-label="Read the Obsidian editorial dispatch">
+                        <img src="assest/img22.jpg" alt="Atmospheric artwork for Frequency Zero">
+                        <div class="exhibition-card-copy">
+                            <span>EDITORIAL / SOUND & VISION</span>
+                            <h3>Signals from the dark</h3>
+                            <p>Dispatches on the films, scores, and ideas shaping the archive.</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer></footer>
+    <script src="js/common.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
